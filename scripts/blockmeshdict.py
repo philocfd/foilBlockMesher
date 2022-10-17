@@ -59,15 +59,15 @@ def gen_blockmeshdict(foil_data, out_dir):
     vertices[9, :] = [Xl[C_max_idx], W, -H]
     vertices[10, :] = [Xu[-1], W, -H]
     vertices[11, :] = [D, W, -H]
-    annotations = ["P0", "P1", "P2", "P3", "P4", "P5",
-                   "P6", "P7", "P8", "P9", "P10", "P11"]
-    fig, ax = plt.subplots(figsize=(16, 9))
-    ax.scatter(vertices[:, 0], vertices[:, 2])
-    ax.set_xlabel("x axis")
-    ax.set_ylabel("z axis")
-    for i, label in enumerate(annotations):
-        plt.annotate(label, (vertices[:, 0][i], vertices[:, 2][i]))
-    plt.show()
+    # annotations = ["P0", "P1", "P2", "P3", "P4", "P5",
+    #                "P6", "P7", "P8", "P9", "P10", "P11"]
+    # fig, ax = plt.subplots(figsize=(16, 9))
+    # ax.scatter(vertices[:, 0], vertices[:, 2])
+    # ax.set_xlabel("x axis")
+    # ax.set_ylabel("z axis")
+    # for i, label in enumerate(annotations):
+    #     plt.annotate(label, (vertices[:, 0][i], vertices[:, 2][i]))
+    # plt.show()
     # Create vertices for other side (negative y-axis)
     vertices2 = vertices.copy()
     vertices2[:, 1] *= -1
