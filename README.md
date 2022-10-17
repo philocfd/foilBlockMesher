@@ -39,6 +39,7 @@ To plot the results for multiple angles of attack, run
 
 `blockMeshDict` generation script based on work by
 [Håkon Strandenes](https://www.hpc.ntnu.no/display/hpc/OpenFOAM+-+Airfoil+Calculations#OpenFOAM-AirfoilCalculations-3:Calculationofforcesandforcecoefficients).
+[petebachant Pete Bachant](https://github.com/petebachant/NACAFoil-OpenFOAM).
 
 
 ## Experimental data
